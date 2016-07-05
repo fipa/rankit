@@ -7,5 +7,6 @@ class ApplicationController < ActionController::Base
 
   def set_features
   	@sidebar_feature = false
+  	@navbar_feature = false
   end
 end
