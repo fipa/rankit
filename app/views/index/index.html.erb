@@ -1,4 +1,17 @@
 <div class="page-header">
   <h1><%=t '.title', :default => "Es Puty y Flay" %></h1>
 
+  <h2><%=t '.title', :default => "Recientes" %></h2>
+
+  <table class="table table-striped">
+    <tbody>
+    <% @albums.each do |album| %>
+    	<tr>
+    		<td><%= image_tag("#{album.id}.jpg") %></td>
+    		<td><%= "By #{album.sponsor}" %></td>
+    	</tr>
+    <% end %>
+    </tbody>
+  </table>
+
 </div>
