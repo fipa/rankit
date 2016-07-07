@@ -1,5 +1,5 @@
 class IndexController < ApplicationController
   def index
-  	@albums = Album.all
+  	@albums = Album.all.order(id: :desc)
   end
 end
